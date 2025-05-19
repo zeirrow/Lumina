@@ -3,7 +3,7 @@ import Animation from "../ui/Animation";
 
 const ProductShowcase = () => {
   return (
-    <section className="bg-[#F9F6F2] py-24 px-6">
+    <section id="shop" className="bg-[#F9F6F2] py-24 px-6">
       <div className="max-w-7xl mx-auto">
         <Animation idxndex={0} className="text-center mb-16">
           <span className="text-[#C28F79] tracking-widest text-sm mb-4 block">

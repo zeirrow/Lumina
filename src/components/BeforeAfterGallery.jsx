@@ -14,7 +14,7 @@ const BeforeAfterGallery = () => {
   };
 
   return (
-    <section className="bg-[#F9F6F2] py-24 px-6">
+    <section id="gallary" className="bg-[#F9F6F2] py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <span className="text-[#C28F79] tracking-widest text-sm mb-4 block">

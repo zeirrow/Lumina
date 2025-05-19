@@ -165,42 +165,65 @@ export const steps = [
 ];
 
 export const videoSrc = {
-  videoUrl: "https://cdn.pixabay.com/video/2020/06/23/42963-434316724_large.mp4", // "https://lumina-skincare.com/videos/product-demo.mp4",
+  videoUrl:
+    "https://cdn.pixabay.com/video/2020/06/23/42963-434316724_large.mp4", // "https://lumina-skincare.com/videos/product-demo.mp4",
   posterUrl: "/images/Lumina.png",
 };
 
 export const beforeAfterResults = [
-    {
-      label: "Fine Lines",
-      before: "/images/image-1.png",
-      after: "/images/Jennifer.png",
-    },
-    {
-      label: "Hydration",
-      before: "/images/Jennifer.png",
-      after: "/images/image-1.png",
-    },
-  ];
+  {
+    label: "Fine Lines",
+    before: "/images/image-1.png",
+    after: "/images/Jennifer.png",
+  },
+  {
+    label: "Hydration",
+    before: "/images/Jennifer.png",
+    after: "/images/image-1.png",
+  },
+];
 
+export const topNav = [
+  { name: "About", href: "#about" },
+  { name: "Shop", href: "#shop" },
+  { name: "Testimonials", href: "#testimonials" },
+  { name: "VIP Access", href: "#vip-access" },
+  { name: "FAQ", href: "#faq" },
+];
 
-
-
-
-
-// = [
-//   {
-//     before: "/images/before1.jpg",
-//     after: "/images/after1.jpg",
-//     description: "4 weeks of use",
-//   },
-//   {
-//     before: "/images/before2.jpg",
-//     after: "/images/after2.jpg",
-//     description: "2 weeks of use",
-//   },
-//   {
-//     before: "/images/before3.jpg",
-//     after: "/images/after3.jpg",
-//     description: "3 weeks of use",
-//   },
-// ];
+export const faqs = [
+  {
+    question: "What skin types is this suitable for?",
+    answer:
+      "All skin types, including sensitive. Our formula is non-irritating and free from parabens and sulfates.",
+  },
+  {
+    question: "How often should I use it?",
+    answer:
+      "For best results, use twice daily after cleansing and before moisturizing.",
+  },
+  {
+    question: "Is it safe for pregnant or nursingmothers?",
+    answer:
+      "Yes, our formula is safe for pregnant or nursing mothers. However, we always recommend consulting with your doctor before starting any new skincare routine.",
+  },
+  {
+    question: "How long will a bottle last?",
+    answer: "A bottle typically lasts 30-60 days, depending on usage.",
+  },
+  {
+    question: "What is your return policy?",
+    answer:
+      "We offer a 30-day satisfaction guarantee. If you're not happy, return it for a full refund.",
+  },
+  {
+    question: "Can I use this with other products?",
+    answer:
+      "Yes, our serum layers beautifully with other products. Just apply it after your toner and before your moisturizer.",
+  },
+  {
+    question: "Is this product vegan?",
+    answer:
+      "Yes, all our products are 100% vegan and cruelty-free. We never test on animals.",
+  }
+];

@@ -44,7 +44,7 @@ const HowItWorks = () => {
         <div className="mt-24 text-center">
           <Modal>
             <Modal.Open opensWindowName="example">
-              <button className="flex items-center justify-center  text-2xl gap-2 sm:gap-4 mx-auto text-[#C28F79] hover:text-[#7C4D39] underline underline-offset-4 transition-colors">
+              <button className="flex items-center justify-center sm:text-2xl gap-2 sm:gap-4 mx-auto text-[#C28F79] hover:text-[#7C4D39] underline underline-offset-4 transition-colors">
                 <FaCirclePlay className="h-5 w-5 md:h-10 md:w-10" />
                 Watch our 2-minute routine guide
               </button>

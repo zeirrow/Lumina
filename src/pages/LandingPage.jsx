@@ -1,13 +1,13 @@
-import Header from "../components/Header";
+import FAQ from "../components/FAQ";
 import Hero from "../components/Hero";
-import BrandStory from "../components/BrandStory";
-import ProductShowcase from "../components/ProductShowcase";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import Features from "../components/Features";
+import BrandStory from "../components/BrandStory";
 import HowItWorks from "../components/HowItWorks";
 import Testimonials from "../components/Testimonials";
 import EmailCapture from "../components/EmailCapture";
-import FAQ from "../components/FAQ";
-import Footer from "../components/Footer";
+import ProductShowcase from "../components/ProductShowcase";
 import BeforeAfterGallery from "../components/BeforeAfterGallery";
 
 const LandingPage = () => {

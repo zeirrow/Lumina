@@ -1,11 +1,6 @@
 import { useState, useEffect } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
-
-const topNav = [
-  { name: "VIP Access", href: "#vip-access" },
-  { name: "Testimonials", href: "#testimonials" },
-  { name: "Contact", href: "#contact" },
-];
+import { topNav } from '../../data/data';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,6 +13,20 @@ const Header = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Close menu when clicking on a link
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
+
+  // Prevent background scrolling when menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [isOpen]);
 
   return (
     <header className={`fixed top-0 z-[1000] w-full transition-all duration-300 ${
@@ -53,23 +62,24 @@ const Header = () => {
           <button 
             className="md:hidden text-[#7C4D39] focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
+            aria-label={isOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isOpen}
           >
             {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
           </button>
         </nav>
 
         {/* Mobile Menu */}
-        <div className={`md:hidden fixed inset-0 bg-[#F9F6F2] z-[999] transition-all duration-300 ease-in-out transform ${
-          isOpen ? 'translate-y-0' : '-translate-y-full'
-        } mt-16`}>
-          <ul className="flex flex-col items-center justify-center h-[calc(100vh-64px)] space-y-8">
+        <div className={`md:hidden fixed inset-0 bg-[#F9F6F2] z-[999] transition-all duration-300 ease-in-out ${
+          isOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none'
+        }`} style={{ top: scrolled ? '48px' : '80px' }}>
+          <ul className="flex flex-col items-center justify-center h-[calc(100vh-80px)] space-y-8">
             {topNav.map((item) => (
               <li key={item.name}>
                 <a 
                   href={item.href} 
                   className="text-2xl text-[#7C4D39] hover:text-[#C28F79] transition-colors font-serif"
-                  onClick={() => setIsOpen(false)}
+                  onClick={handleLinkClick}
                 >
                   {item.name}
                 </a>

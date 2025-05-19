@@ -4,7 +4,7 @@ import Animation from "../ui/Animation";
 
 const BrandStory = () => {
   return (
-    <section className="relative bg-white overflow-hidden">
+    <section id="about" className="relative bg-white overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[#F9F6F2] to-transparent" />
 
