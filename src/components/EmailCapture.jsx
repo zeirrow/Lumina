@@ -15,7 +15,7 @@ const EmailCapture = () => {
       setIsSubmitting(false);
       setIsSuccess(true);
       setEmail("");
-      setTimeout(() => setIsSuccess(false), 3000);
+      setTimeout(() => setIsSuccess(false), 5000);
     }, 1500);
   };
 

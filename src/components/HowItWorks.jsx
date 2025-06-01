@@ -44,10 +44,13 @@ const HowItWorks = () => {
         <div className="mt-24 text-center">
           <Modal>
             <Modal.Open opensWindowName="example">
-              <button className="flex items-center justify-center sm:text-2xl gap-2 sm:gap-4 mx-auto text-[#C28F79] hover:text-[#7C4D39] underline underline-offset-4 transition-colors">
-                <FaCirclePlay className="h-5 w-5 md:h-10 md:w-10" />
-                Watch our 2-minute routine guide
-              </button>
+              <button className="group relative flex items-center justify-center gap-3 sm:gap-4 px-4 py-3 sm:px-6 sm:py-4 mx-auto text-[#C28F79] hover:text-[#7C4D39] font-semibold bg-white/5 backdrop-blur-sm rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0">
+  <FaCirclePlay className="h-5 w-5 md:h-7 md:w-7 border-2 border-white rounded-full ring-2 ring-[#C28F79] ring-offset-2 ring-offset-black shadow-sm group-hover:scale-110 transition-transform duration-200" />
+  <span className="text-sm sm:text-base underline underline-offset-4">
+    Watch our 2-minute routine guide
+  </span>
+</button>
+
             </Modal.Open>
 
             <Modal.Window name="example">
